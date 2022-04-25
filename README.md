@@ -25,7 +25,10 @@ Run the API and make sure it is listening on port 8000 using this command php ar
 Open your CLI, navigate to the frontend directory and run npm install
 
 # Start the application
-Start the application by running the command npm run dev 
+Start the application by running the command npm run dev, the application will start running on port 8080
+
+# Launch the application
+Go to your browser of choice and visit http://localhost:8080/subscribe.
 ```
 
 ## Running The Unit Tests
