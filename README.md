@@ -6,10 +6,10 @@
 
 ``` bash
 # Setting up Database Connection
-Change the connection string to appropriate connection string in .env file
+Change the connection string to the appropriate connection string in .env file
 
 # Create Database
-Create a Database on MYSQL server using the CREATE Database SQL Syntax
+Create a Database on MYSQL server using the CREATE Database SQL Syntax i.e. CREATE DATABASE databasename;
 
 # Run Migrations
 Run the Migrations To Create The Tables and their respective relationships using php artisan migrate
@@ -32,8 +32,8 @@ Start the application by running the command npm run dev
 
 ``` bash
 # Activate The MockClass
-comment the $this->app->bind(SubscriberProvider::class, MockSubscriberProvider::class) and uncomment the $this->app->bind(SubscriberProvider::class, AppSubscriberProvider::class)
-in the AppServiceProvider class.
+uncomment the $this->app->bind(SubscriberProvider::class, MockSubscriberProvider::class) and comment the $this->app->bind(SubscriberProvider::class, AppSubscriberProvider::class)
+in the AppServiceProvider class to activate the MockClass for Unit Testing.
 
 # Run Tests
 Run the Tests using php artisan test
